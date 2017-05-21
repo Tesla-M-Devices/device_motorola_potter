@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # for specific
 $(call inherit-product, vendor/motorola/potter/potter-vendor.mk)
 
-# Inherit some common Validus stuff.
-$(call inherit-product, vendor/validus/config/common_full_phone.mk)
-$(call inherit-product, vendor/validus/config/caf_fw.mk)
+# Inherit some common Tesla stuff.
+$(call inherit-product, vendor/tesla/config/common_full_phone.mk)
+$(call inherit-product, vendor/tesla/config/caf_fw.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -32,7 +32,7 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := validus_potter
+PRODUCT_NAME := tesla_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
@@ -42,4 +42,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=motorola/potter/potter:7.0/NPN25.137-35/37:user/release-keys \
     PRIVATE_BUILD_DESC="potter-7.0/NPN25.137-35/37:user/release-keys" \
     PRODUCT_NAME="Moto G5 Plus" \
-    DEVICE_MAINTAINERS="Nick van Bokhorst (GtrCraft)"
+    DEVICE_MAINTAINERS="Shivam Desai (Flashhhh)"
