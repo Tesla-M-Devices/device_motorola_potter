@@ -27,7 +27,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 TESLA_ROOT="$MY_DIR"/../../..
 
-HELPER="$TESLA_ROOT"/vendor/validus/build/tools/extract_utils.sh
+HELPER="$TESLA_ROOT"/vendor/tesla/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
